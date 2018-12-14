@@ -7,32 +7,40 @@ The purpose of this project is to investigate a real-world data set, analyse its
 
 In this case, the subject of study has been the published statistics regarding the Irish-speaking population in the Republic of Ireland, selecting a set of variables to characterise the data set.
 
-Data was extracted from Central Statistics Office of Ireland, and more specifically from the 2016 Census in its Profile 10:Education, Skills and the Irish Language, open for consultation and download from (https://www.cso.ie/en/releasesandpublications/ep/p-cp10esil/p10esil/ilg/)
+Data was extracted from Central Statistics Office of Ireland, and more specifically from the 2016 Census in its Profile 10:Education, Skills and the Irish Language, open for consultation and download from (https://www.cso.ie/en/releasesandpublications/ep/p-cp10esil/p10esil/ilg/).
 
+## Variables:
 
+Variables included in this project are age, sex, geographical location (Counties and cities), education level and ability to speak Irish.
 
+Raw data was downloaded into thematic csv files, available in this repository. Raw data was manipulated in order to obtain percentages that were used to weight synthetic variables.
 
+## Synthetic data set:
 
+Consists in a sample of 200 registries with six variables, including a recodification of the variable age into an interval, presented in a DataFrame.
 
-aims to investigate and illustrate some of the main characteristics included in the NumPy sub-package Random. All code has been inserted in a Jupyter Notebook.
-Usage
+Each instance was randomly generated using numpy random package and weighted according to 2016 Census information analysed.
+
+All code has been inserted in a Jupyter Notebook.
+
+## Usage
 
 To run this code, please use the Jupyter Notebook file under the name random.ipynb.
 
 Jupyter Notebook can be initiated through Anaconda Navigator and it will use your browser to deploy both texts an code, as it includes an interpreter.
 
-All code included in this project is Python 3.6.4. Additional packages needed to run this code are NumPy, matplotlib and Pandas.
+All code included in this project is Python 3.6.4. Additional packages needed to run this code are NumPy and Pandas.
 
-All this packages can be individually downloaded and installed as per instructions available in their documentation. However, dowloading an installing Anaconda will ensure full compatibility for Linux, Mac and Windows systems.
-Resources used
+These packages can be individually downloaded and installed as per instructions available in their documentation. However, dowloading an installing Anaconda will ensure full compatibility for Linux, Mac and Windows systems.
+
+## Resources used
 
 Along this project, several sources of information have been used. Although specific references are included as links in the notebook, the main reference sources have been:
 
     StackOverflow
-    NumPy and SciPy Documentation
-    MatPlotLib documenttion
+    NumPy Documentation (specifically regarding random subpackage)
     Stats Trek
-    Pybonacci Blog (in Spanish)
+    Central Statistic Office of Ireland
 
 License
 
